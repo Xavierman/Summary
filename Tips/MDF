@@ -1,1 +1,10 @@
-
+* Put forward a noval visual saliency model with CNNs
+  * multiscale feature extraction
+    * regions A from entire image (use Hierarchical image segmentation) -> cnn *3 -> fc *3 -> feature A
+    * regions B from regions A (use Hierarchical image segmentation) -> cnn *3 -> fc *3 -> feature B
+    * regions C from regions B (use Hierarchical image segmentation) -> cnn *3 -> fc *3 -> feature C
+  * cost fuction
+    * 
+  * Efficacy
+    * S-3CNN multiscale feature obtain the details (feature maps are get from multiscale regions and be extended to 227*227)
+    * Multilevel Decomposition, fused model performs better
